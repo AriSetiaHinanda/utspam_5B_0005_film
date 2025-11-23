@@ -1,0 +1,271 @@
+# CineBook - Aplikasi Pembelian Tiket Film
+
+**UTS Pemrograman Aplikasi Mobile**  
+**Kelas: 5B**  
+**NIM: 0005**
+
+## 📱 Deskripsi Aplikasi
+
+CineBook adalah aplikasi mobile untuk pembelian tiket film yang dibangun menggunakan Flutter. Aplikasi ini memungkinkan pengguna untuk melihat daftar film, jadwal tayang, melakukan pembelian tiket, dan mengelola transaksi mereka.
+
+## ✨ Fitur Utama
+
+### 1. Autentikasi
+- **Login** - Login dengan email/username dan password
+- **Register** - Registrasi akun baru dengan validasi lengkap
+- Sistem autentikasi menggunakan SQLite database
+
+### 2. Manajemen Film
+- **Daftar Film** - Tampilan grid/list film dengan poster, genre, rating, harga
+- **Detail Film** - Informasi lengkap film (sinopsis, durasi, genre, rating)
+- **Jadwal Tayang** - Lihat jadwal film dengan ketersediaan kursi
+- **Pencarian Film** - Cari film berdasarkan judul
+- **Filter Genre** - Filter film berdasarkan kategori (Action, Drama, Comedy, dll)
+
+### 3. Transaksi
+- **Pembelian Tiket** - Form pembelian dengan validasi
+  - Pilih jumlah tiket
+  - Pilih metode pembayaran (Cash/Kartu)
+  - Auto-calculate total pembayaran
+- **Riwayat Transaksi** - Lihat semua transaksi yang pernah dilakukan
+- **Detail Transaksi** - Informasi lengkap transaksi termasuk:
+  - Detail film dan jadwal
+  - Informasi pembeli
+  - Metode pembayaran
+  - Status transaksi
+- **Edit Transaksi** - Ubah jumlah tiket dan metode pembayaran
+- **Batalkan Transaksi** - Batalkan transaksi yang sudah dibuat
+
+### 4. Profile
+- **Lihat Profile** - Tampilkan informasi user (username, email, alamat, telepon)
+- **Edit Profile** - Update informasi profil
+- **Ubah Password** - Ganti password dengan validasi
+- **Dark Mode** - Toggle tema terang/gelap
+- **Logout** - Keluar dari aplikasi
+
+## 🛠️ Teknologi yang Digunakan
+
+- **Flutter** - Framework UI
+- **Dart** - Bahasa pemrograman
+- **Provider** - State Management
+- **SQLite (sqflite)** - Database lokal
+- **Material Design 3** - Design system
+
+## 📦 Dependencies
+
+```yaml
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.1.1
+  sqflite: ^2.3.0
+  path: ^1.8.3
+```
+
+## 🗂️ Struktur Project
+
+```
+lib/
+├── core/
+│   ├── constants/
+│   │   ├── app_constants.dart
+│   │   └── database_constants.dart
+│   ├── themes/
+│   │   └── app_theme.dart
+│   └── utils/
+│       └── validators.dart
+├── data/
+│   ├── database/
+│   │   ├── database_helper.dart
+│   │   └── daos/
+│   │       ├── user_dao.dart
+│   │       ├── film_dao.dart
+│   │       └── transaction_dao.dart
+│   ├── models/
+│   │   ├── user_model.dart
+│   │   ├── film_model.dart
+│   │   ├── schedule_model.dart
+│   │   └── transaction_model.dart
+│   └── repositories/
+│       ├── user_repository.dart
+│       ├── film_repository.dart
+│       └── transaction_repository.dart
+├── presentation/
+│   ├── pages/
+│   │   ├── auth/
+│   │   │   ├── login_page.dart
+│   │   │   └── register_page.dart
+│   │   ├── home/
+│   │   │   ├── home_page.dart
+│   │   │   └── beranda_page.dart
+│   │   ├── films/
+│   │   │   ├── film_list_page.dart
+│   │   │   └── film_detail_page.dart
+│   │   ├── transaction/
+│   │   │   ├── purchase_form_page.dart
+│   │   │   ├── transaction_history_page.dart
+│   │   │   ├── transaction_detail_page.dart
+│   │   │   └── edit_transaction_page.dart
+│   │   └── profile/
+│   │       ├── profile_page.dart
+│   │       ├── edit_profile_page.dart
+│   │       └── reset_password_page.dart
+│   ├── providers/
+│   │   ├── auth_provider.dart
+│   │   ├── film_provider.dart
+│   │   ├── transaction_provider.dart
+│   │   └── theme_provider.dart
+│   └── widgets/
+│       ├── films/
+│       │   ├── film_card.dart
+│       │   └── schedule_card.dart
+│       └── transactions/
+│           └── transaction_card.dart
+└── main.dart
+```
+
+## 🎨 Fitur UI/UX
+
+- **Responsive Design** - Adaptif untuk berbagai ukuran layar
+- **Dark Mode** - Tema gelap dan terang
+- **Gradient Effects** - Gradient modern pada komponen UI
+- **Card Design** - Kartu dengan shadow dan border radius
+- **Icon Integration** - Material Icons terintegrasi
+- **Loading States** - Indikator loading untuk operasi async
+- **Error Handling** - Pesan error yang user-friendly
+- **Form Validation** - Validasi input real-time
+
+## 💾 Database Schema
+
+### Users Table
+```sql
+- id: INTEGER PRIMARY KEY
+- username: TEXT UNIQUE
+- email: TEXT UNIQUE
+- password: TEXT
+- full_name: TEXT
+- address: TEXT
+- phone_number: TEXT
+- created_at: TEXT
+- updated_at: TEXT
+```
+
+### Films Table
+```sql
+- id: INTEGER PRIMARY KEY
+- title: TEXT
+- genre: TEXT
+- price: REAL
+- poster_url: TEXT
+- description: TEXT
+- duration: INTEGER
+- rating: REAL
+- created_at: TEXT
+```
+
+### Schedules Table
+```sql
+- id: INTEGER PRIMARY KEY
+- film_id: INTEGER
+- show_date: TEXT
+- show_time: TEXT
+- available_seats: INTEGER
+- created_at: TEXT
+```
+
+### Transactions Table
+```sql
+- id: INTEGER PRIMARY KEY
+- user_id: INTEGER
+- film_id: INTEGER
+- schedule_id: INTEGER
+- buyer_name: TEXT
+- quantity: INTEGER
+- purchase_date: TEXT
+- total_amount: REAL
+- payment_method: TEXT
+- card_number: TEXT
+- status: TEXT
+- created_at: TEXT
+- updated_at: TEXT
+```
+
+## 🚀 Cara Menjalankan Aplikasi
+
+1. Clone repository
+```bash
+git clone https://github.com/username/utspam_5B_0005_film.git
+cd cinebook
+```
+
+2. Install dependencies
+```bash
+flutter pub get
+```
+
+3. Jalankan aplikasi
+```bash
+flutter run
+```
+
+## 📱 Testing
+
+Aplikasi telah diuji pada:
+- Android (Physical Device - RMX1821)
+- Debug Mode
+- Hot Reload/Restart berfungsi dengan baik
+
+## 👤 Akun Demo
+
+Untuk testing, Anda dapat membuat akun baru atau menggunakan data yang sudah ada di database.
+
+**Sample User:**
+- Username: testuser
+- Email: test@example.com
+- Password: password123
+
+## 🎯 Fitur Tambahan
+
+- Auto-populate buyer name dari user yang login
+- Masked card number untuk keamanan
+- Transaction status management (Completed, Cancelled)
+- Real-time total calculation
+- Seat availability indicator
+- Genre filtering dan search
+- Dark mode persistence
+
+## 📝 Catatan Pengembangan
+
+### Challenges & Solutions
+
+1. **State Management** - Menggunakan Provider untuk managing state
+2. **Database Persistence** - SQLite untuk data lokal
+3. **Form Validation** - Custom validators untuk semua input
+4. **Dark Mode** - Theme switching dengan ThemeProvider
+5. **Navigation** - MaterialPageRoute dengan proper context
+
+### Best Practices Implemented
+
+- Clean Architecture (Separation of Concerns)
+- Repository Pattern
+- Provider State Management
+- Proper Error Handling
+- Input Validation
+- Responsive Design
+- Code Documentation
+
+## 📄 License
+
+This project is created for educational purposes (UTS PAM).
+
+## 👨‍💻 Developer
+
+**NIM:** 0005  
+**Kelas:** 5B  
+**Mata Kuliah:** Pemrograman Aplikasi Mobile  
+**Dosen:** [Nama Dosen]
+
+---
+
+**Tanggal Pengumpulan:** 23 November 2025  
+**Status:** ✅ Completed
