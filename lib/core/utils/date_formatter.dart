@@ -1,0 +1,19 @@
+import 'package:intl/intl.dart';
+
+class DateFormatter {
+  static String formatDate(DateTime date) {
+    return DateFormat('yyyy-MM-dd').format(date);
+  }
+  
+  static String formatDateTime(DateTime date) {
+    return DateFormat('yyyy-MM-dd HH:mm').format(date);
+  }
+  
+  static String formatDisplayDate(DateTime date) {
+    return DateFormat('dd MMMM yyyy', 'id_ID').format(date);
+  }
+  
+  static String formatDisplayTime(String time) {
+    return time;
+  }
+}
