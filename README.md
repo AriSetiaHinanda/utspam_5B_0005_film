@@ -1,8 +1,9 @@
 # CineBook - Aplikasi Pembelian Tiket Film
 
 **UTS Pemrograman Aplikasi Mobile**  
+**Nama: Ari Setia Hinanda**  
 **Kelas: 5B**  
-**NIM: 0005**
+**NIM: 3012310005**
 
 ## 📱 Deskripsi Aplikasi
 
@@ -215,14 +216,37 @@ Aplikasi telah diuji pada:
 - Debug Mode
 - Hot Reload/Restart berfungsi dengan baik
 
-## 👤 Akun Demo
+## Vidio Demo
+https://drive.google.com/file/d/1sVK-A1czcfJS1JA8i7wKX-UsIAAwQDtc/view?usp=sharing
 
-Untuk testing, Anda dapat membuat akun baru atau menggunakan data yang sudah ada di database.
+isi vidio: 
+1. Registrasi dan Login
+   <img width="436" height="870" alt="Cuplikan layar 2025-11-24 145314" src="https://github.com/user-attachments/assets/8d4513c5-8717-4d7e-9e69-a3178d69219d" />
+   <img width="436" height="868" alt="Cuplikan layar 2025-11-24 150103" src="https://github.com/user-attachments/assets/03e6f4de-0e99-4a59-b6df-34260f900984" />
+   
+2. Home Dasboard
+   <img width="436" height="875" alt="Cuplikan layar 2025-11-24 150329" src="https://github.com/user-attachments/assets/07394884-4cd7-40e5-9994-d3eb8debca74" />
 
-**Sample User:**
-- Username: testuser
-- Email: test@example.com
-- Password: password123
+3. Daftar Film dengan Fitur Pencarian
+   <img width="428" height="872" alt="Cuplikan layar 2025-11-24 150720" src="https://github.com/user-attachments/assets/5489b5dc-e2a5-4481-a569-ddbb037ac81c" />
+
+4. Pembelian tiket(Pilih Film --> Pilih Jumlah tiket & Jadwal tayang  --> Beli Tiket -->Pembelian Berhasil)
+   Pilih Film 
+   <img width="427" height="862" alt="Cuplikan layar 2025-11-24 151245" src="https://github.com/user-attachments/assets/b2216f0d-2aff-4113-8be1-6e9eb88bf94e" />
+   
+   Pilih Jumlah tiket & Jadwal tayang --> Beli Tiket
+   <img width="436" height="871" alt="image" src="https://github.com/user-attachments/assets/f584e5a5-eab3-4daa-83e5-7e7bc3e6bc0b" />
+
+   Pembelian Behasil
+   <img width="435" height="874" alt="image" src="https://github.com/user-attachments/assets/2a67fa13-7942-4cfc-93bc-6caf33ae8c4a" />
+
+5. Riwayat Transaksi & Detail Transaksi
+   <img width="437" height="871" alt="image" src="https://github.com/user-attachments/assets/17767bc3-e3aa-49aa-8181-44369d4c4538" />
+   <img width="433" height="869" alt="image" src="https://github.com/user-attachments/assets/fb857d7b-60a8-40c9-831f-ee7ef4052bfc" />
+   
+6. Informasi Profil dan Logout
+   <img width="430" height="869" alt="image" src="https://github.com/user-attachments/assets/18093040-30fd-44be-80bf-fbf9ae10099b" />
+
 
 ## 🎯 Fitur Tambahan
 
@@ -260,12 +284,10 @@ This project is created for educational purposes (UTS PAM).
 
 ## 👨‍💻 Developer
 
-**NIM:** 0005  
+**NIM:** 3012310005  
 **Kelas:** 5B  
 **Mata Kuliah:** Pemrograman Aplikasi Mobile  
-**Dosen:** [Nama Dosen]
+**Dosen:** [Moch Nurul Indra Al Fauzan, S.Kom., M.Eng]
 
----
-
-**Tanggal Pengumpulan:** 23 November 2025  
+3 November 2025  
 **Status:** ✅ Completed
