@@ -84,61 +84,6 @@ CineBook adalah aplikasi mobile untuk pembelian tiket film yang dibangun menggun
 
 ---
 
-## 📸 Screenshots
-
-<table>
-  <tr>
-    <td align="center">
-      <img src="screenshots/login.jpg" width="200px" alt="Login Page"/>
-      <br />
-      <b>Login</b>
-    </td>
-    <td align="center">
-      <img src="screenshots/register.jpg" width="200px" alt="Register Page"/>
-      <br />
-      <b>Register</b>
-    </td>
-    <td align="center">
-      <img src="screenshots/home.jpg" width="200px" alt="Home Page"/>
-      <br />
-      <b>Beranda</b>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="screenshots/film_list.jpg" width="200px" alt="Film List"/>
-      <br />
-      <b>Daftar Film</b>
-    </td>
-    <td align="center">
-      <img src="screenshots/film_detail.jpg" width="200px" alt="Film Detail"/>
-      <br />
-      <b>Detail Film</b>
-    </td>
-    <td align="center">
-      <img src="screenshots/purchase.jpg" width="200px" alt="Purchase Form"/>
-      <br />
-      <b>Beli Tiket</b>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="screenshots/transaction.jpg" width="200px" alt="Transaction History"/>
-      <br />
-      <b>Riwayat Transaksi</b>
-    </td>
-    <td align="center">
-      <img src="screenshots/profile.jpg" width="200px" alt="Profile Page"/>
-      <br />
-      <b>Profile</b>
-    </td>
-    <td align="center">
-      <img src="screenshots/dark_mode.jpg" width="200px" alt="Dark Mode"/>
-      <br />
-      <b>Dark Mode</b>
-    </td>
-  </tr>
-</table>
 
 ## 🛠️ Teknologi yang Digunakan
 
@@ -385,5 +330,4 @@ This project is created for educational purposes (UTS PAM).
 **Mata Kuliah:** Pemrograman Aplikasi Mobile  
 **Dosen:** [Moch Nurul Indra Al Fauzan, S.Kom., M.Eng]
 
-3 November 2025  
-**Status:** ✅ Completed
+
