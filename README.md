@@ -44,6 +44,102 @@ CineBook adalah aplikasi mobile untuk pembelian tiket film yang dibangun menggun
 - **Dark Mode** - Toggle tema terang/gelap
 - **Logout** - Keluar dari aplikasi
 
+## 📹 Dokumentasi Aplikasi
+
+### 1. Registrasi dan Login
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/8d4513c5-8717-4d7e-9e69-a3178d69219d" width="250" alt="Login Page"/>
+  <img src="https://github.com/user-attachments/assets/03e6f4de-0e99-4a59-b6df-34260f900984" width="250" alt="Register Page"/>
+</p>
+
+### 2. Home Dashboard
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/07394884-4cd7-40e5-9994-d3eb8debca74" width="250" alt="Home Dashboard"/>
+</p>
+
+### 3. Daftar Film dengan Fitur Pencarian
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/5489b5dc-e2a5-4481-a569-ddbb037ac81c" width="250" alt="Film List"/>
+</p>
+
+### 4. Pembelian Tiket
+**Alur:** Pilih Film → Pilih Jumlah Tiket & Jadwal Tayang → Beli Tiket → Pembelian Berhasil
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b2216f0d-2aff-4113-8be1-6e9eb88bf94e" width="250" alt="Detail Film"/>
+  <img src="https://github.com/user-attachments/assets/f584e5a5-eab3-4daa-83e5-7e7bc3e6bc0b" width="250" alt="Form Pembelian"/>
+  <img src="https://github.com/user-attachments/assets/2a67fa13-7942-4cfc-93bc-6caf33ae8c4a" width="250" alt="Pembelian Berhasil"/>
+</p>
+
+### 5. Riwayat Transaksi & Detail Transaksi
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/17767bc3-e3aa-49aa-8181-44369d4c4538" width="250" alt="Riwayat Transaksi"/>
+  <img src="https://github.com/user-attachments/assets/fb857d7b-60a8-40c9-831f-ee7ef4052bfc" width="250" alt="Detail Transaksi"/>
+</p>
+
+### 6. Informasi Profil dan Logout
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/18093040-30fd-44be-80bf-fbf9ae10099b" width="250" alt="Profile Page"/>
+</p>
+
+---
+
+## 📸 Screenshots
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="screenshots/login.jpg" width="200px" alt="Login Page"/>
+      <br />
+      <b>Login</b>
+    </td>
+    <td align="center">
+      <img src="screenshots/register.jpg" width="200px" alt="Register Page"/>
+      <br />
+      <b>Register</b>
+    </td>
+    <td align="center">
+      <img src="screenshots/home.jpg" width="200px" alt="Home Page"/>
+      <br />
+      <b>Beranda</b>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="screenshots/film_list.jpg" width="200px" alt="Film List"/>
+      <br />
+      <b>Daftar Film</b>
+    </td>
+    <td align="center">
+      <img src="screenshots/film_detail.jpg" width="200px" alt="Film Detail"/>
+      <br />
+      <b>Detail Film</b>
+    </td>
+    <td align="center">
+      <img src="screenshots/purchase.jpg" width="200px" alt="Purchase Form"/>
+      <br />
+      <b>Beli Tiket</b>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="screenshots/transaction.jpg" width="200px" alt="Transaction History"/>
+      <br />
+      <b>Riwayat Transaksi</b>
+    </td>
+    <td align="center">
+      <img src="screenshots/profile.jpg" width="200px" alt="Profile Page"/>
+      <br />
+      <b>Profile</b>
+    </td>
+    <td align="center">
+      <img src="screenshots/dark_mode.jpg" width="200px" alt="Dark Mode"/>
+      <br />
+      <b>Dark Mode</b>
+    </td>
+  </tr>
+</table>
+
 ## 🛠️ Teknologi yang Digunakan
 
 - **Flutter** - Framework UI
